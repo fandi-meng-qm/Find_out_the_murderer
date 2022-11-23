@@ -4,8 +4,8 @@ import copy
 from env import MurderGame
 
 # inital
-mg = MurderGame(gridNum=10,
-                peopleNum=10)
+mg = MurderGame(gridNum=20,
+                peopleNum=200)
 
 # human play
 tb = mg.createTb()

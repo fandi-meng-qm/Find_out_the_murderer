@@ -141,14 +141,14 @@ class MurderGame():
                 print("Machine Police Session : Police Hold On, Next Step!")
             else:
                 tb.loc[tb.people == policeGuess,
-                       'statue'] = 'killed by Police'
+                       'statue'] = 'kill by Police'
                 tb.loc[tb.people == policeGuess, 'deadTime'] = time
                 if policeGuess == self.killer[0]:
                     print("Machine Police Session : Time", time, ", Killer ",
-                          policeGuess, 'Killed by Police! He is Killer!')
+                          policeGuess, 'Kill by Police! He is Killer!')
                 else:
                     print("Machine Police Session : Time", time, ", Civil ", policeGuess,
-                          'Killed by Police! He is innocent!')
+                          'Kill by Police! He is innocent!')
         time = time+1
         killerDeath, allCivilDeath, gameEnd, civilLiveNow = self.checkStatue(
             tb)
